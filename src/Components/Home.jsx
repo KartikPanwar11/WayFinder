@@ -5,10 +5,10 @@ const Home = () => {
     <>
     <section className="hero" id="home">
       <div className="hero-banner">
-        <h1>continue exploring</h1>
+        <h1>Every Road Has a Story.</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          explicabo debitis est autem dicta.
+          The best memories are made on the backroads. <br/>
+          Wayfinder guides you to the scenic routes and hidden gems that turn a simple drive into a great story.
         </p>
         <a href="#tours" className="btn hero-btn">explore tours</a>
       </div>

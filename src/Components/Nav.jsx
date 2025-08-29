@@ -1,9 +1,10 @@
 import React from 'react'
+import { pageLinks, socialLinks } from '../../data'
 
 const Nav = () => {
   return (
     <div>
-        <nav className="navbar">
+      <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <img src="./assets/logo.png" className="nav-logo" alt="wayfinder logo" />
@@ -12,39 +13,26 @@ const Nav = () => {
           </button>
         </div>
         <ul className="nav-links" id="nav-links">
-          <li>
-            <a href="#home" className="nav-link"> home </a>
+        {pageLinks.map((link)=>{
+          return <li key={link.id}>
+            <a href={link.href} className="nav-link">{link.text}</a>
           </li>
-
-          <li>
-            <a href="#about" className="nav-link"> about </a>
-          </li>
-
-          <li>
-            <a href="#services" className="nav-link"> services </a>
-          </li>
-
-          <li>
-            <a href="#tours" className="nav-link"> tours</a>
-          </li>
+        })} 
         </ul>
 
         <ul className="nav-icons">
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank" className="nav-icon"
-              ><i className="fab fa-squarespace"></i
-            ></a>
-          </li>
+          {socialLinks.map((link)=>{
+            const{id,href,icons}=link
+            return(
+              <li>
+              <a href={link.href} 
+              target="_blank"
+              rel='noreferrer'
+              className="nav-icon"> 
+              <i className={link.icons}></i></a>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>
