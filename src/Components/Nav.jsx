@@ -1,5 +1,5 @@
 import React from 'react'
-import { pageLinks, socialLinks } from '../../data'
+import { pageLinks, socialLinks } from '../data'
 
 const Nav = () => {
   return (
@@ -7,7 +7,7 @@ const Nav = () => {
       <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src="./assets/logo.png" className="nav-logo" alt="wayfinder logo" />
+          <img src='./images/logo.png' className="nav-logo" alt="wayfinder-logo" />
           <button type="button" className="nav-toggle" id="nav-toggle">
             <i className="fas fa-bars"></i>
           </button>

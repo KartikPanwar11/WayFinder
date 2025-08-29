@@ -9,7 +9,7 @@ const About = () => {
       <div class="section-center about-center">
         <div class="about-img">
           <img
-            src="./assets/about.jpg"
+            src='./images/about.jpg'
             class="about-photo"
             alt="a guy on a trek"
           />

@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './Title'
-import { services } from '../../data'
+import { services } from '../data'
 
 const Services = () => {
   return (
