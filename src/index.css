@@ -204,7 +204,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('./images/main.jpg') center/cover no-repeat;
+      url('https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg') center/cover no-repeat;
   .hero-banner {
     padding: 0;
   }
